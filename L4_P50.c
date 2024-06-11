@@ -1,3 +1,5 @@
+//Get two numbers of up to 50 digits and perform addition and print the result.
+
 #include<stdio.h>
 
 void sumarr(int c1,int c2,int *no1,int *no2){//We have passed the array no1 and no2 to this function-->Refer main function
