@@ -1,3 +1,6 @@
+//Write a program to multiply up to two 50 digit numbers.
+//DATE:12|06|2024
+
 #include<stdio.h>
 
 int no1[50],no2[50];
