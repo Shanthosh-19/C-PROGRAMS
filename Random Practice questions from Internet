@@ -1,0 +1,49 @@
+//DATE: 14|06|2024
+
+//FIND THE PERFECT NUMBER
+
+// #include<stdio.h>
+
+// int main(){
+//   int number,sum=0;
+//   printf("Enter the number: ");
+//   scanf("%d",&number);
+//   for(int i=1;i<number;i++){
+//     if(number%i==0) sum=sum+i;
+//   }
+//   if(sum==number) printf("Number is a perfect number.");
+//   else printf("Number is not a perfect number.");
+// }
+  
+//REMOVE WHITESPACES AND PRINT
+
+#include<stdio.h>
+
+int countstring(char *stringFn){
+  int i=0,count=0;
+  while(stringFn[i]!=0){
+    count++;
+    i++;
+  }
+  return count;
+}
+
+int main(){
+  char string[50];
+  printf("Enter string: ");
+  gets(string);
+  int string_count=countstring(string);
+  char newString[string_count];
+  int iteration=0,newString_iteration=0;
+  while(string[iteration]!=0){
+    if(string[iteration]!=32){
+      newString[newString_iteration]=string[iteration];
+      newString_iteration++;
+    }
+    iteration++;
+  }
+  newString[newString_iteration+1]=0;
+  printf("%s",newString);
+
+  return 0;
+}
